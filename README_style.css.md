@@ -1,63 +1,63 @@
-**README.md**
-=====================================
+# File Overview
+===============
 
-**File Overview**
------------------
+## `style.css`
+================
 
-This file (`.\style.css`) is a CSS (Cascading Style Sheets) file used to customize the visual appearance and layout of an HTML document. It contains styles for the `<body>` element and `<button>` elements.
+This is a CSS (Cascading Style Sheets) file used for styling a web application.
 
-**What this file does**
--------------------------
+# What this file does
+----------------------
 
-This CSS file styles the HTML document by setting:
+This file defines the visual styles for a web page, including font family, font size, colors, and layout. It specifically targets the `<body>` element and customizes the styles for buttons.
 
-* The font family, text alignment, and margin of the `<body>` element
-* The padding, font size, background color, text color, border, border radius, and cursor style of the `<button>` element
-* The background color of the `<button>` element on hover
+## Supported Browsers
+-------------------
 
-**Functions/Classes explained**
----------------------------------
+This CSS code is compatible with modern web browsers, including Chrome, Firefox, Safari, and Edge.
 
-### `<body>` styles
+# Functions/Classes explained
+-----------------------------
 
-The styles for the `<body>` element are as follows:
+### `.body` Styles
+------------------
 
-* `font-family`: Sets the font family to Arial, which is a sans-serif font. The `sans-serif` value is set as a fallback in case the Arial font is not available.
-* `text-align`: Centers the text within the `<body>` element.
-* `margin-top`: Sets the top margin of the `<body>` element to 100 pixels.
-* `background-color`: Sets the background color of the `<body>` element to a light gray color (`#f2f2f2`).
+*   `font-family: Arial, sans-serif;`: Sets the font family for the entire document to Arial, with sans-serif as a fallback.
+*   `text-align: center;`: Centers the text horizontally within the `<body>` element.
+*   `margin-top: 100px;`: Adds a margin of 100 pixels to the top of the `<body>` element.
+*   `background-color: #f2f2f2;`: Sets the background color of the `<body>` element to a light gray color.
 
-### `<button>` styles
+### `.button` Styles
+--------------------
 
-The styles for the `<button>` element are as follows:
+*   `padding: 10px 20px;`: Sets the padding around buttons to 10 pixels on the top and bottom, and 20 pixels on the left and right.
+*   `font-size: 16px;`: Sets the font size for buttons to 16 pixels.
+*   `background-color: blue;`: Sets the background color of buttons to blue.
+*   `color: white;`: Sets the text color of buttons to white.
+*   `border: none;`: Removes any border from buttons.
+*   `border-radius: 5px;`: Adds a 5-pixel radius to the corners of buttons.
+*   `cursor: pointer;`: Sets the cursor shape to a pointing hand when hovering over buttons.
 
-* `padding`: Sets the padding of the `<button>` element to 10 pixels horizontally and 20 pixels vertically.
-* `font-size`: Sets the font size of the `<button>` element to 16 pixels.
-* `background-color`: Sets the background color of the `<button>` element to a blue color.
-* `color`: Sets the text color of the `<button>` element to white.
-* `border`: Sets the border of the `<button>` element to none, which means it will not display a border.
-* `border-radius`: Sets the border radius of the `<button>` element to 5 pixels, which means the corners will be rounded.
-* `cursor`: Sets the cursor style of the `<button>` element to a pointing hand, indicating that it is clickable.
-
-### `.hover` class
-
-The CSS class `.hover` is applied to the `<button>` element on hover. It sets the background color of the `<button>` element to a darker blue color (`darkblue`), creating a hover effect.
-
-**Dependencies used**
--------------------------
-
-This CSS file does not rely on any external dependencies or libraries.
-
-**Commit message guidelines**
+### `.button:hover` Styles
 ---------------------------
 
-When updating this CSS file, please follow the standard commit message guidelines:
+*   `background-color: darkblue;`: Sets the background color of buttons to a darker blue color on hover.
 
-* Use present tense (e.g., "Add new style for button")
-* Use brief and descriptive subject line
-* Use imperative mood (e.g., "Add padding to button")
+# Dependencies used
+--------------------
 
-**Contributing**
---------------
+*   This file does not require any external dependencies, as it uses only native CSS properties.
 
-Contributions to this CSS file are welcome! Please submit a pull request with your changes and follow the project's guidelines for submitting code.
+# Example Usage
+---------------
+
+To apply these styles to an HTML page, include the CSS file in the `<head>` section of the document:
+```html
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+```
+You can then use buttons with the specified styles in your HTML code:
+```html
+<button>Click me!</button>
+```
