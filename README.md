@@ -8,7 +8,7 @@ Here's the README.md for the basicWeb GitHub project:
 Basic Web is a simple web page application that demonstrates the use of HTML, CSS, and JavaScript. The webpage changes the text on the screen when a button is clicked.
 
 ## Folder Structure & Explanation   
-=====================================
+====================================++=
 
 ### ./
 
